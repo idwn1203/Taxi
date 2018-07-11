@@ -1,81 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/t_start"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_span="10"/>
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/b_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_margin="5dp"
             android:text="출발지" />
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <EditText
             android:id="@+id/t_end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_span="10"/>
+            android:layout_width="196dp"
+            android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/b_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_margin="5dp"
             android:text="도착지" />
-
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <EditText
-            android:id="@+id/t_people"
+            android:id="@+id/t_sex"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_span="10"/>
+            android:layout_height="wrap_content" />
+
         <Button
-            android:id="@+id/b_people"
+            android:id="@+id/b_sex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="인원수" />
+            android:layout_margin="5dp"
+            android:text="남/여" />
 
     </TableRow>
 
-
-    <TableRow>
-        <EditText
-            android:id="@+id/t_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_span="10"/>
-            />
-        <Button
-            android:id="@+id/b_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="시간" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="호출" />
-
     </TableRow>
+
 
 </TableLayout>
