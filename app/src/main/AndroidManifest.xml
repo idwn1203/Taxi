@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SendActivity" android:label="Send Activity"/>
+        <activity android:name=".SendActivity" android:label="Second SendActivity"/>
+        <activity android:name=".RoomActivity" android:label="Thired RoomActivity"/>
     </application>
 
 </manifest>
