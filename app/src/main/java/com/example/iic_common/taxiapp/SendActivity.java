@@ -115,7 +115,11 @@ public class SendActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(getApplicationContext(), "호출하였습니다", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
-                        startActivity(intent);
+                        intent.putExtra("Num1",
+                                Integer.parseInt(t_start.getText().toString()));
+                        intent.putExtra("Num2",
+                                Integer.parseInt(t_end.getText().toString()));
+                        startActivityForResult(intent,0);
                     }
                 });
                 dlg.setNegativeButton("취소", new DialogInterface.OnClickListener() {
